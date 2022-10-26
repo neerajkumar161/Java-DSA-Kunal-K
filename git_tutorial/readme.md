@@ -26,3 +26,37 @@ git stash pop
 <!-- Clear Stash -->
 
 git stash clear
+
+<!-- Add Origin to Github Repository -->
+
+git origin add repo-url
+
+<!-- Learn Git Branching by Visualization -->
+
+https://learngitbranching.js.org/
+
+<!-- Add Upstream URl (Original) from where project has been forked -->
+
+git remote add upstream -upstream-url
+
+<!-- Check Origin and Upstream Urls -->
+
+git remote -v
+
+<!-- Force Push Commit, if remove any commit -->
+
+git push origin master -f
+
+<!-- Update my forked project with original one and Commits as well -->
+
+git fetch --all --prune
+git reset --hard upstream/main
+
+<!-- Another Option -->
+
+git pull upstream main
+
+<!-- User rebase command to merge multiple commits into single one -->
+<!-- i: interactive mode, it will rebase commits above this commitId -->
+
+git rebase -i commitId
